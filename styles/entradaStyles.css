@@ -18,3 +18,7 @@
 .animate__slideInDown {
   animation-delay: 0.33s;
 }
+
+.bgForm{
+  background-color: rgb(86, 58, 111);
+}
