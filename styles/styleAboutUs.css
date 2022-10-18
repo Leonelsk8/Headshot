@@ -1,0 +1,334 @@
+
+.cardImgr1 {
+  border: white solid 3px;
+  margin-top: 1rem;
+  border-radius: 8000px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 3px 24px 2px rgba(0,0,0,0.51);
+  -webkit-box-shadow: 0px 3px 24px 2px rgba(0,0,0,0.51);
+  -moz-box-shadow: 0px 3px 24px 2px rgba(0,0,0,0.51);
+}
+.cardr1, .cardr2, .cardr3, .cardr4 {
+  border: rgb(160, 160, 160) solid 2px;
+  align-items: center;
+  background-color: #7858A6;
+  border-radius: 10px;
+  box-shadow: 0px 3px 24px 2px rgba(0,0,0,0.51);
+  -webkit-box-shadow: 0px 3px 24px 2px rgba(0,0,0,0.51);
+  -moz-box-shadow: 0px 3px 24px 2px rgba(0,0,0,0.51);
+  height: auto;
+}
+
+.card-bodyr1 {
+  align-items: center;
+}
+.card-titler1 {
+  color: white;
+}
+
+
+.iFb:hover {
+ -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.3, 1.3, 1.3);
+  transform: scale3d(1.3, 1.3, 1.3);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  }
+  @keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.3, 1.3, 1.3);
+  transform: scale3d(1.3, 1.3, 1.3);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  } 
+  
+  .iIg:hover {
+ -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.3, 1.3, 1.3);
+  transform: scale3d(1.3, 1.3, 1.3);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  }
+  @keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.3, 1.3, 1.3);
+  transform: scale3d(1.3, 1.3, 1.3);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  } 
+
+  .iTw:hover {
+ -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.3, 1.3, 1.3);
+  transform: scale3d(1.3, 1.3, 1.3);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  }
+  @keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.3, 1.3, 1.3);
+  transform: scale3d(1.3, 1.3, 1.3);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  } 
+
+  .iWs:hover {
+ -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.3, 1.3, 1.3);
+  transform: scale3d(1.3, 1.3, 1.3);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  }
+  @keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.3, 1.3, 1.3);
+  transform: scale3d(1.3, 1.3, 1.3);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  } 
+
+.carouselr1 img, .carouselImgLeo {
+  border-radius: 2rem;
+}
+.carouselImgr1, .carouselImgLeo {
+  border: white solid 3px;
+  border-radius: 8000px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 3px 24px 2px rgba(0,0,0,0.51);
+  -webkit-box-shadow: 0px 3px 24px 2px rgba(0,0,0,0.51);
+  -moz-box-shadow: 0px 3px 24px 2px rgba(0,0,0,0.51);
+}
+
+.tittleCarouselr1, .tittleCarouselLeo, .tittleCarouselGonza {
+  font-family: 'Concert One', cursive;
+}
+.textCarouselr1, .textCarouselLeo, .textCarouselGonza {
+  font-family: 'Roboto', sans-serif;
+}
+.crewInfo {
+  text-align: left;
+}
+
+.teamQuote {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInUp {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInUp {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+}
+.teamQuote h1 {
+  font-family: 'Concert One', cursive;
+  font-size: 50px;
+  font-weight: 600;
+  -webkit-text-stroke: 1px white;
+  text-shadow: 5px 5px 10px black;
+}
+@media (min-width: 992px){
+.carouselImgr1, .carouselImgLeo {
+  margin: 0rem 45rem 0px 0px;
+  
+}
+.textCarouselr1, .textCarouselGonza {
+  margin-bottom: 12rem;
+  margin-right: 45.5rem;
+}
+.textCarouselLeo {
+  margin-right: 34rem;
+  margin-bottom: 11rem;
+}
+.tittleCarouselLeo {
+  margin-right: 52rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.tittleCarouselGonza {
+  margin-right: 48rem;
+  margin-top: 1rem;
+}
+.textCarouselGonza {
+  margin-right: 40rem;
+  margin-top: 3rem;
+  margin-bottom: 11rem;
+}
+.tittleCarouselr1 {
+  margin: 1rem 50rem 2rem 0px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .carouselImgr1 {
+  margin: 0rem 45rem 0px 0px;
+  
+}
+.textCarouselLeo {
+  margin-right: 16.5rem;
+  margin-bottom: 0rem;
+  margin-top: 0.5rem;
+  
+}
+.carouselImgLeo {
+  margin-bottom: 0rem;
+}
+.textCarouselGonza {
+  margin-bottom: 0rem;
+  margin-right: 23rem;
+  margin-top: 2rem;
+}
+.tittleCarouselGonza {
+  margin-right: 31.5rem;
+}
+.tittleCarouselLeo {
+  margin-right: 34.5rem;
+  margin-top: 1rem;
+}
+.textCarouselr1 {
+  margin-bottom: 0px;
+  margin-right: 27.5rem;
+}
+.tittleCarouselr1 {
+  margin: 1rem 32rem 2rem 0px;
+}
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .carouselImgr1 {
+  margin: 0rem 45rem 0px 0px;
+  
+}
+.textCarouselr1 {
+  margin-bottom: 8rem;
+  margin-right: 38.5rem;
+}
+.tittleCarouselr1 {
+  margin: 1rem 43rem 2rem 0px;
+}
+.textCarouselLeo {
+  margin-bottom: 6.8rem;
+  margin-right: 27.5rem;
+}
+.textCarouselGonza {
+  margin-bottom: 5.5rem;
+}
+}
+
+@media (max-width: 540px) {
+  .carouselImgr1, .carouselImgLeo {
+ 
+  width: 130px;
+  height: 130px;
+  }
+}

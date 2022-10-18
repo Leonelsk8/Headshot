@@ -1,0 +1,63 @@
+
+.error{
+  background-color: rgba(76,53,117);
+  padding-top: 5rem;
+  height: 100vh;
+  width: 100vw;
+}
+
+.navbar{
+  background-color: rgba(76,53,117);
+}
+
+.links a {
+  text-decoration: none;
+  margin: 0px 10px 0px 10px;
+  color: white;
+}
+
+.buttons a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  background-color: #371B58;
+  border-radius: 10px;
+}
+
+.homer {
+  border-bottom: 3px solid black;
+  filter: drop-shadow(7px 0px 10px black);
+}
+
+.image {
+  filter: drop-shadow(7px 0px 10px black);
+}
+
+.modal-content{
+  background-color: rgba(91, 62, 145, 0.7);
+  border: 2px solid rgba(164, 164, 164, 0.5);
+}
+
+.btn-close {
+  background-color: rgb(148, 97, 210);
+}
+
+.modal-footer{
+  background-color: #402164;
+}
+
+.btn {
+  background-color: #371B58;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  background-color: #4C3575;
+  color: #fff;
+  box-shadow: 1px 1px 3px rgb(255, 255, 255);
+}
+
+.burgerButton {
+  background-color: #482a6b;
+}

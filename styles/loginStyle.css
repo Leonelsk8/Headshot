@@ -1,0 +1,80 @@
+
+.loginformr1 {
+  border-radius: 3rem;
+  background-position: center ;
+  color: white;
+  margin-left: 8rem;
+  box-shadow: 1px 0px 33px 3px rgba(164,0,255,0.75);
+  -webkit-box-shadow: 1px 0px 33px 3px rgba(164,0,255,0.75);
+  -moz-box-shadow: 1px 0px 33px 3px rgba(164,0,255,0.75);
+  border: solid rgb(0, 0, 0) 1px;
+}
+.imgloginr1 {
+  width: 420px;
+  height: 710px;
+  border-radius: 3rem;
+  box-shadow: 1px 0px 33px 3px rgba(164,0,255,0.75);
+  -webkit-box-shadow: 1px 0px 33px 3px rgba(164,0,255,0.75);
+  -moz-box-shadow: 1px 0px 33px 3px rgba(164,0,255,0.75);
+  align-self: center;
+  margin-top: 1rem;
+  border: solid rgb(0, 0, 0) 1px;
+}
+.welcomeLegendr1 {
+  box-shadow: 1px 0px 22px 4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 0px 22px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 0px 22px 4px rgba(0,0,0,0.75);
+}
+.form-check-input:checked {
+  background-color: #5900ff;
+  border-color: #d900ff;
+}
+
+.loginscreenr1 {
+  display: flex;
+}
+.imglogincontainerr1 {
+  margin: 2rem 0px 0px 15rem;
+}
+@media (max-width: 1400px) and (min-width: 992px) {
+ .loginformr1 {
+  display: flex;
+  margin-left: 2rem;
+ }
+ .imglogincontainerr1 {
+  margin: 2rem 0px 0px 5rem;
+}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .loginformr1 {
+    display: flex;
+    margin: 0px 5rem 0px 5rem;
+
+  }
+  .imglogincontainerr1 {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .facebooklegendr1 {
+    display: none;
+  }
+  .googlelegendr1 {
+    display: none;
+  }
+  .loginformr1 {
+    display: flex;
+    margin: 0px 0rem 0px 0rem;
+
+  }
+
+}
+
+@media (max-width: 1200px) {
+   .facebooklegendr1 {
+    display: none;
+  }
+  .googlelegendr1 {
+    display: none;
+  }
+}

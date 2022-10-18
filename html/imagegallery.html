@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HeadShot - ImageGallery</title>
+  <link rel="icon" href="../img/logoRecortado.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/imagegallerystyle.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+  <header class="fixed-top bar">
+    <nav class="navbar navbar-expand-md navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logoOriginal.png" alt="logo" width="130" height="50">
+        </a>
+        <div class="bg-dark">
+          <button class="burgerButton navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="container">
+          <div class="links collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./AboutUs.html">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Contact.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-md-none" data-bs-toggle="modal" data-bs-target="#suscribeModal">Suscribirse</a>
+              </li>
+            </ul>
+              <button class="btn btn-outline-info d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#suscribeModal">Suscribirse</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="modal fade text-white fw-semibold" id="suscribeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Suscribirse</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nombre y apellido</label>
+              <input type="text" class="form-control border border-dark border-2" aria-describedby="Help">
+              <div class="form-text text-white">Puedes poner un apodo</div>
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Dirección</label>
+              <input type="text" class="form-control border border-dark border-2" id="inputAddress" placeholder="Calle 123">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Dirección 2</label>
+              <input type="text" class="form-control border border-dark border-2" id="inputAddress2" placeholder="Nº de departamento, oficina o piso">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Ciudad</label>
+              <input type="text" class="form-control border border-dark border-2" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">País</label>
+              <select id="inputState" class="form-select border border-dark border-2">
+                <option selected>País</option>
+                <option>Argentina</option>
+                <option>Bolivia</option>
+                <option>Brasil</option>
+                <option>Chile</option>
+                <option>Ecuador</option>
+                <option>Paraguay</option>
+                <option>Uruguay</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control border border-dark border-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+              <div id="emailHelp" class="form-text text-white">No compartiremos tu email con nadie!.</div>
+            </div><div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Repetir Email</label>
+              <input type="email" class="form-control border border-dark border-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="No copies tu Email, escribilo!">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control border border-dark border-2" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Repetir contraseña</label>
+              <input type="password" class="form-control border border-dark border-2" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input border border-dark border-2" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Deseo recibir actualizaciones por Email</label>
+            </div>          
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-light">Suscribirse!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section>
+      <div class="container ">
+        <div class="row gallery px-5 pb-5 ">
+          <h1 class="text-center text-white my-5 animate__animated animate__fadeIn">Galería de imágenes</h1>
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <a type="button" class="border border-white border-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="../img/callofduty.jpg" class="img-fluid" alt="imagen call of duty">
+            </a>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Call of duty III black ops</h1>
+                      <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="../img/callofduty.jpg" class="img-fluid" alt="imagen call of duty">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-secondary" download href="../img/callofduty.jpg">Descargar Imagen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <a type="button" class="border border-white border-2" data-bs-toggle="modal" data-bs-target="#counter">
+              <img src="../img/counter.jpg" class="img-fluid" alt="imagen counter">
+            </a>
+            <div class="modal fade" id="counter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Counter Strike CSGO</h1>
+                      <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="../img/counter.jpg" class="img-fluid" alt="imagen counter">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-secondary" download href="../img/counter.jpg">Descargar Imagen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <a type="button" class="border border-white border-2" data-bs-toggle="modal" data-bs-target="#fortnite">
+              <img src="../img/fortnite.jpg" class="img-fluid" alt="imagen fortnite">
+            </a>
+            <div class="modal fade" id="fortnite" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Fortnite</h1>
+                      <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="../img/fortnite.jpg" class="img-fluid" alt="imagen fortnite">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-secondary" download href="../img/fortnite.jpg">Descargar Imagen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <a type="button" class="border border-white border-2" data-bs-toggle="modal" data-bs-target="#image1">
+              <img src="../img/imagegallery/image1.jpg" class="img-fluid" alt="imagen juegoshooter">
+            </a>
+            <div class="modal fade" id="image1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Juego Shooter</h1>
+                      <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="../img/imagegallery/image1.jpg" class="img-fluid" alt="imagen juegoshooter">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-secondary" download href="../img/imagegallery/image1.jpg">Descargar Imagen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <a type="button" class="border border-white border-2" data-bs-toggle="modal" data-bs-target="#image2">
+              <img src="../img/imagegallery/image2.jpg" class="img-fluid" alt="imagen halo">
+            </a>
+            <div class="modal fade" id="image2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Halo 3</h1>
+                      <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="../img/imagegallery/image2.jpg" class="img-fluid" alt="imagen halo">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-secondary" download href="../img/imagegallery/image2.jpg">Descargar Imagen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <a type="button" class="border border-white border-2" data-bs-toggle="modal" data-bs-target="#slider3">
+              <img src="../img/imagegallery/image3.jpg" class="img-fluid" alt="imagen juegodeguerra">
+            </a>
+            <div class="modal fade" id="slider3" tabindex="-1" aria-labelledby="slider3" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h1 class="modal-title fs-5 text-white" id="slider3">Juego de guerra</h1>
+                      <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="../img/imagegallery/image3.jpg" class="img-fluid" alt="imagen juegodeguerra">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-secondary" download href="../img/imagegallery/image3.jpg">Descargar Imagen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <a type="button" class="border border-white border-2" data-bs-toggle="modal" data-bs-target="#imageentrada">
+              <img src="../img/entrada1.jpg" class="img-fluid" alt="imagen callofduty">
+            </a>
+            <div class="modal fade" id="imageentrada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Call of duty III black ops</h1>
+                      <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="../img/entrada1.jpg" class="img-fluid" alt="imagen callofduty">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-secondary" download href="../img/entrada1.jpg">Descargar Imagen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <a type="button" class="border border-white border-2" data-bs-toggle="modal" data-bs-target="#image4">
+              <img src="../img/imagegallery/image4.jpg" class="img-fluid" alt="imagen de chica">
+            </a>
+            <div class="modal fade" id="image4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Chica con Subfusil</h1>
+                      <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="../img/imagegallery/image4.jpg" class="img-fluid" alt="imagen de chica">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-secondary" download href="../img/imagegallery/image4.jpg">Descargar Imagen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <a type="button" class="border border-white border-2" data-bs-toggle="modal" data-bs-target="#image5">
+              <img src="../img/imagegallery/image5.jpg" class="img-fluid" alt="imagen del joker">
+            </a>
+            <div class="modal fade" id="image5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Skin de joker</h1>
+                      <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="../img/imagegallery/image5.jpg" class="img-fluid" alt="imagen del joker">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-secondary" download href="../img/imagegallery/image5.jpg">Descargar Imagen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <a type="button" class="border border-white border-2" data-bs-toggle="modal" data-bs-target="#image6">
+              <img src="../img/imagegallery/image6.jpg" class="img-fluid" alt="imagen del fifa">
+            </a>
+            <div class="modal fade" id="image6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">FIFA</h1>
+                      <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="../img/imagegallery/image6.jpg" class="img-fluid" alt="imagen del fifa">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-secondary" download href="../img/imagegallery/image6.jpg">Descargar Imagen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <a type="button" class="border border-white border-2" data-bs-toggle="modal" data-bs-target="#image7">
+              <img src="../img/imagegallery/image7.jpg" class="img-fluid" alt="imagen de god of war">
+            </a>
+            <div class="modal fade" id="image7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">God of War</h1>
+                      <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="../img/imagegallery/image7.jpg" class="img-fluid" alt="imagen de god of war">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-secondary" download href="../img/imagegallery/image7.jpg">Descargar Imagen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <a type="button" class="border border-white border-2" data-bs-toggle="modal" data-bs-target="#image8">
+              <img src="../img/imagegallery/image8.jpg" class="img-fluid" alt="imagen de god of war 4">
+            </a>
+            <div class="modal fade" id="image8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">God of war 4</h1>
+                      <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="../img/imagegallery/image8.jpg" class="img-fluid" alt="imagen de god of war 4">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-secondary" download href="../img/imagegallery/image8.jpg">Descargar Imagen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <a type="button" class="border border-white border-2" data-bs-toggle="modal" data-bs-target="#image9">
+              <img src="../img/imagegallery/image9.jpg" class="img-fluid" alt="imagen de need for speed">
+            </a>
+            <div class="modal fade" id="image9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Need for speed</h1>
+                      <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="../img/imagegallery/image9.jpg" class="img-fluid" alt="imagen de need for speed">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-secondary" download href="../img/imagegallery/image9.jpg">Descargar Imagen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <a type="button" class="border border-white border-2" data-bs-toggle="modal" data-bs-target="#image10">
+              <img src="../img/imagegallery/image10.jpg" class="img-fluid" alt="imagen de gta5">
+            </a>
+            <div class="modal fade" id="image10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Grand theft auto 5</h1>
+                      <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="../img/imagegallery/image10.jpg" class="img-fluid" alt="imagen de gta5">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-secondary" download href="../img/imagegallery/image10.jpg">Descargar Imagen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <a type="button" class="border border-white border-2" data-bs-toggle="modal" data-bs-target="#image11">
+              <img src="../img/imagegallery/image11.jpg" class="img-fluid" alt="imagen de gta5">
+            </a>
+            <div class="modal fade" id="image11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Grand theft auto 5</h1>
+                      <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="../img/imagegallery/image11.jpg" class="img-fluid" alt="imagen de gta5">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-secondary" download href="../img/imagegallery/image11.jpg">Descargar Imagen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <a type="button" class="border border-white border-2" data-bs-toggle="modal" data-bs-target="#image12">
+              <img src="../img/imagegallery/image12.jpg" class="img-fluid" alt="imagen de shadow">
+            </a>
+            <div class="modal fade" id="image12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Shadow</h1>
+                      <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="../img/imagegallery/image12.jpg" class="img-fluid" alt="imagen de shadow">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-secondary" download href="../img/imagegallery/image12.jpg">Descargar Imagen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-5">
+    <div class="container-fluid">
+      <div class="row p-4 pb-2 text-white">
+        <div class="col-sm-12 col-md-4 col-lg-4 text-center bloke">
+          <img src="../img/logoMorado.png" alt="logo" class="figure-img img-fluid rounded mx-auto mt-5" width="153" height="153">
+          <p><img src="../img/award-fill.svg" alt="#">  
+            "9 años de experiencia"    
+          </p>
+          <p><img src="../img/bookmark-star-fill.svg" alt="#">
+            "Compra Protegida"
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 text-center bloke">
+          <p class="h5 mb-3">Juegos</p>
+          <div class="mb-2">
+            <a class="text-decoration-none juegos" href="./Error404.html">Fifa 23</a>
+          </div>
+          <div class="mb-2">
+            <a class="text-decoration-none juegos" href="./Error404.html">Fortnite</a>
+          </div>
+          <div class="mb-2">
+            <a class="text-decoration-none juegos" href="./Error404.html">Call of duty BO3</a>
+          </div>
+          <div class="mb-2">
+            <a class="text-decoration-none juegos" href="./Error404.html">CSGO</a>
+          </div>
+          <div class="mb-2">
+            <a class="text-decoration-none juegos" href="./Error404.html">Fall Guys</a>
+          </div>
+          <div class="mb-2">
+            <a class="text-decoration-none juegos" href="./Error404.html">NBA2K23</a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 text-center bloke">
+          <p class="h5 mb-3">siguenos en</p>
+          <div class="row row-cols-md-1 row-cols-sm-4"> 
+            <div class="col mb-2">
+              <a href="./Error404.html">
+                <i class="fa-brands fa-facebook fa-2x fa-x1">
+                  <img class="figure-img img-fluid logors rounded mx-auto icon" width="40" src="../img/facebook.svg" alt="logo facebook">
+                </i>
+              </a>
+            </div>
+            <div class="col mb-2">
+              <a href="./Error404.html">
+                <i class="fa-brands fa-instagram fa-2x fa-x1">
+                  <img class="figure-img img-fluid logors rounded mx-auto icon" width="40" src="../img/instagram.svg" alt="logo instagram">
+                </i>
+              </a>
+            </div>
+            <div class="col mb-2">
+              <a href="./Error404.html">
+                <i class="fa-brands fa-twitter-sqare fa-2x fa-x1">
+                  <img class="figure-img img-fluid logors rounded mx-auto icon" width="40" src="../img/twitter.svg" alt="logo twitter">
+                </i>
+              </a>
+            </div>
+            <div class="col mb-2">
+              <a href="./Error404.html">
+                <i class="fa-brands fa-whatsapp fa-2x fa-x1">
+                  <img class="figure-img img-fluid logors rounded mx-auto icon" width="40" src="../img/whatsapp.svg" alt="logo whatsapp">
+                </i>
+              </a>
+            </div>
+          </div>      
+        </div>
+        <div class="col-sm-12 fondocopy pt-3 bloke">
+          <p class="small text-center">"Copyright © 2022 Headshoot. Todos los derechos reservados."</p>
+        </div>
+      </div>
+    </div>
+  </footer> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
